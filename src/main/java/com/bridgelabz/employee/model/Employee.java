@@ -1,27 +1,52 @@
 package com.bridgelabz.employee.model;
 
+import com.bridgelabz.employee.dto.EmployeePayrollDTO;
+
 public class Employee 
 {
-    private String firstName;
-    private String lastName;
+	 private int employeeId;
+	    private String name;
+	    private long salary;
 
-    public String getFirstName()
-    {
-        return firstName;
-    }
+	    public Employee()
+	    {
 
-    public void setFirstName(String firstName)
-    {
-        this.firstName=firstName;
-    }
+	    }
 
-    public String getLastName()
-    {
-        return lastName;
-    }
+		public Employee(int employeeId, EmployeePayrollDTO employeePayrollDTO) 
+		{
+			this.employeeId = employeeId;
+			this.name = employeePayrollDTO.name;
+			this.salary = employeePayrollDTO.salary;
+		}
 
-    public void setLastName(String lastName)
-    {
-        this.lastName= lastName;
-    }
+		public int getEmployeeId() 
+		{
+			return employeeId;
+		}
+
+		public void setEmployeeId(int employeeId) 
+		{
+			this.employeeId = employeeId;
+		}
+
+		public String getName() 
+		{
+			return name;
+		}
+
+		public void setName(String name) 
+		{
+			this.name = name;
+		}
+
+		public long getSalary() 
+		{
+			return salary;
+		}
+
+		public void setSalary(long salary) 
+		{
+			this.salary = salary;
+		}
 }
