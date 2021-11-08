@@ -45,9 +45,8 @@ public @Data class Employee
 
     }
 
-	public Employee(int empId,EmployeePayrollDTO employeePayrollDTO)
+	public Employee(EmployeePayrollDTO employeePayrollDTO)
 	{
-		this.employeeId=empId;
 		this.updateEmployeePayrollData(employeePayrollDTO);
 	}
 
